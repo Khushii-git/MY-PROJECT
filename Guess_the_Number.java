@@ -9,14 +9,14 @@ class Number {
         System.out.println("Computer chooses its number");
         System.out.println("You have to predict the correct number");
         System.out.println("You will get 5 chances to guess the correct number....Try to guess it within 5 chances");
-
+        System.out.print("Choose any number between 1-100\n");
         n = random.nextInt(101);
     }
 
     public void takeUserInput() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Your turn");
-        // System.out.print("Choose any number between 1-100\n");
+        
         n1 = sc.nextInt();
 
         if (n1 < 0 || n1 > 100) {
